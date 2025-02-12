@@ -1429,40 +1429,40 @@ public final class Emitter extends IEmitter {
 
     emitCMapAccess();
 
-      skel.emitNext(); // 6
+    skel.emitNext(); // 6
 
-      emitScanError();
+    emitScanError();
 
-      skel.emitNext(); // 9
+    skel.emitNext(); // 9
 
-      emitDoEOF();
+    emitDoEOF();
 
-      skel.emitNext(); // 10
+    skel.emitNext(); // 10
 
-      emitLexFunctHeader(functionName);
+    emitLexFunctHeader(functionName);
 
-      emitNextInput();
+    emitNextInput();
 
-      emitGetRowMapNext();
+    emitGetRowMapNext();
 
-      skel.emitNext(); // 17
+    skel.emitNext(); // 17
 
-      emitEOFVal();
+    emitEOFVal();
 
-      skel.emitNext(); // 18
+    skel.emitNext(); // 18
 
-      emitActions();
+    emitActions();
 
-      skel.emitNext(); // 19
+    skel.emitNext(); // 19
 
-      emitNoMatch();
+    emitNoMatch();
 
-      skel.emitNext(); // 20
+    skel.emitNext(); // 20
 
-      emitMain(functionName);
+    emitMain(functionName);
 
-      skel.emitNext(); // 21
+    skel.emitNext(); // 21
 
-      out.close();
+    out.close();
   }
 }
